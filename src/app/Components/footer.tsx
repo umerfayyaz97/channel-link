@@ -68,23 +68,35 @@ const Footer = () => {
       <div className="mt-8 md:mt-4 md:ml-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         {/* Social Media Icons */}
         <div className="flex space-x-6 justify-center md:justify-start">
-          <a href="#" className="text-blue-500 hover:text-blue-700">
+          <a
+            href="#"
+            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+          >
             <FaFacebookF size={20} />
           </a>
-          <a href="#" className="text-blue-500 hover:text-blue-700">
+          <a
+            href="#"
+            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+          >
             <FaInstagram size={20} />
           </a>
-          <a href="#" className="text-blue-500 hover:text-blue-700">
+          <a
+            href="#"
+            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+          >
             <FaLinkedinIn size={20} />
           </a>
-          <a href="#" className="text-blue-500 hover:text-blue-700">
+          <a
+            href="#"
+            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+          >
             <FaYoutube size={20} />
           </a>
         </div>
 
         {/* Navigation Links */}
-        <div className="space-y-4 md:space-x-8 md:flex md:space-y-0">
-          <ul className="space-y-4 md:space-y-0 md:flex md:space-x-8 text-sm md:text-base">
+        <div className="space-y-4 md:space-x-12 md:flex md:space-y-0">
+          <ul className="space-y-4 md:space-y-0 md:flex md:space-x-28 text-sm md:text-base">
             {/* Align the first link with the second column */}
             <li className="md:ml-8">
               <Link href="/" className="text-gray-500 hover:text-blue-500">
