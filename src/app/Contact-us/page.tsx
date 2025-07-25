@@ -1,18 +1,26 @@
 "use client";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 
-import React, { useState } from "react";
+// Define the type for the form data
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 // Main ContactPage component
 const App = () => {
-  // State to manage form input values
-  const [formData, setFormData] = useState({
+  // State to manage form input values, explicitly typed as FormData
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
   });
 
-  // Handle input changes
-  const handleChange = (e) => {
+  // Handle input changes with explicit event typing
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -20,13 +28,15 @@ const App = () => {
     }));
   };
 
-  // Handle form submission
-  const handleSubmit = (e) => {
+  // Handle form submission with explicit event typing
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default form submission behavior
     // In a real application, you would send this data to a backend server.
     // For this example, we'll just log it to the console.
     console.log("Form submitted:", formData);
     // You might want to add a success message or clear the form here
+    // IMPORTANT: Avoid using alert() in production React apps as it's blocking.
+    // Consider using a custom modal or toast notification library instead.
     alert("Thank you for your message! We will get back to you soon.");
     setFormData({ name: "", email: "", message: "" }); // Clear the form
   };
@@ -92,7 +102,8 @@ const App = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              rows="5"
+              // Corrected: rows now takes a number, not a string
+              rows={5}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 resize-y"
               placeholder="Your message..."
               required
