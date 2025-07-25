@@ -343,7 +343,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            href="/brands"
+            href="/Brands"
             className="hover:text-blue-500 transition duration-300"
           >
             Brands
