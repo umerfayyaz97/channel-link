@@ -125,7 +125,7 @@ const Navbar = () => {
             Brands
           </Link>
           <Link
-            href="/contact-us"
+            href="/Contact-us"
             className="hover:text-blue-500 transition duration-300"
           >
             Contact Us

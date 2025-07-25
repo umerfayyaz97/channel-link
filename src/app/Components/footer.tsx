@@ -107,7 +107,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/about-us"
+                href="/Company/about-us"
                 className="text-gray-500 hover:text-blue-500"
               >
                 About Us
@@ -115,7 +115,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/services"
+                href="/Services"
                 className="text-gray-500 hover:text-blue-500"
               >
                 Services
@@ -123,7 +123,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/brands"
+                href="/Brands"
                 className="text-gray-500 hover:text-blue-500"
               >
                 Brands
@@ -131,7 +131,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/contact-us"
+                href="/Contact-us"
                 className="text-gray-500 hover:text-blue-500"
               >
                 Contact Us
