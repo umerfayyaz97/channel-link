@@ -51,7 +51,7 @@ export default function HomePage() {
 
             {/* Button */}
             <div className="mt-4 sm:mb-4 sm:mt-0 md:mt-0">
-              <button className="px-4 py-2 bg-blue-600 text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none">
+              <button className="px-4 py-2 bg-[#2c90ba] text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none">
                 Read More
               </button>
             </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
       <section className="py-20 px-4 md:px-12">
         {/* Heading and Paragraph */}
         <div className="text-center space-y-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-blue-500">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
             What we offer
           </h1>
           <p className="text-base lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">

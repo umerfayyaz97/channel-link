@@ -49,14 +49,14 @@ export default function AboutUs() {
       {/* Third Section: Business Verticals */}
       <div className="py-16 px-4 bg-white text-black">
         <div className="text-center space-y-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl text-blue-500">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
             Business Verticals
           </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
           {/* Box 1 */}
-          <div className="bg-sky-500 text-black rounded-lg p-6 flex flex-col items-center">
+          <div className="bg-[#2c90ba] text-black rounded-lg p-6 flex flex-col items-center">
             <div className="w-16 h-16 flex justify-center items-center mb-4">
               <img src="/a2.1.svg" alt="Vertical 1" />
             </div>
@@ -68,7 +68,7 @@ export default function AboutUs() {
           </div>
 
           {/* Box 2 */}
-          <div className="bg-sky-500 text-black rounded-lg p-6 flex flex-col items-center">
+          <div className="bg-[#2c90ba] text-black rounded-lg p-6 flex flex-col items-center">
             <div className="w-16 h-16 flex justify-center items-center mb-4">
               <img src="/a2.2.svg" alt="Vertical 2" />
             </div>
@@ -80,7 +80,7 @@ export default function AboutUs() {
           </div>
 
           {/* Box 3 */}
-          <div className="bg-sky-500 text-black rounded-lg p-6 flex flex-col items-center">
+          <div className="bg-[#2c90ba] text-black rounded-lg p-6 flex flex-col items-center">
             <div className="w-16 h-16 flex justify-center items-center mb-4">
               <img src="/a2.3.svg" alt="Vertical 3" />
             </div>
@@ -92,7 +92,7 @@ export default function AboutUs() {
           </div>
 
           {/* Box 4 */}
-          <div className="bg-sky-500 text-black rounded-lg p-6 flex flex-col items-center">
+          <div className="bg-[#2c90ba] text-black rounded-lg p-6 flex flex-col items-center">
             <div className="w-16 h-16 flex justify-center items-center mb-4">
               <img src="/a2.4.svg" alt="Vertical 4" />
             </div>
@@ -110,7 +110,7 @@ export default function AboutUs() {
       {/* Fourth Section: Marketplace We Specialize In with Light Grey Background */}
       <div className="py-16 px-4 bg-gray-100 text-black">
         <div className="text-center space-y-6">
-          <h2 className="text-2xlxl sm:text-4xl md:text-5xl text-blue-500">
+          <h2 className="text-2xlxl sm:text-4xl md:text-5xl text-[#2c90ba]">
             Marketplace We Specialize In
           </h2>
         </div>

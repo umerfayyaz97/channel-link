@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="max-w-full mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
         {/* First Column: Company Name & Description */}
         <div className="w-full md:w-1/3 text-center mr-14 ml-8 md:text-left">
-          <h2 className="text-3xl font-extrabold text-blue-500 italic">
+          <h2 className="text-3xl font-extrabold text-[#2c90ba] italic">
             CHANNEL LINK
           </h2>
           <p className="mt-2 text-sm text-gray-500">
@@ -58,7 +58,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300"
+              className="bg-[#2c90ba] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300"
             >
               Subscribe
             </button>
@@ -72,25 +72,25 @@ const Footer = () => {
         <div className="flex space-x-6 justify-center md:justify-start">
           <a
             href="#"
-            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+            className="bg-[#2c90ba] text-white p-2 rounded-full hover:bg-blue-700"
           >
             <FaFacebookF size={20} />
           </a>
           <a
             href="#"
-            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+            className="bg-[#2c90ba] text-white p-2 rounded-full hover:bg-blue-700"
           >
             <FaInstagram size={20} />
           </a>
           <a
             href="#"
-            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+            className="bg-[#2c90ba] text-white p-2 rounded-full hover:bg-blue-700"
           >
             <FaLinkedinIn size={20} />
           </a>
           <a
             href="#"
-            className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
+            className="bg-[#2c90ba] text-white p-2 rounded-full hover:bg-blue-700"
           >
             <FaYoutube size={20} />
           </a>

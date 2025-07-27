@@ -28,17 +28,13 @@ const App = () => {
     }));
   };
 
-  // Handle form submission with explicit event typing
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent default form submission behavior
-    // In a real application, you would send this data to a backend server.
-    // For this example, we'll just log it to the console.
+
     console.log("Form submitted:", formData);
-    // You might want to add a success message or clear the form here
-    // IMPORTANT: Avoid using alert() in production React apps as it's blocking.
-    // Consider using a custom modal or toast notification library instead.
+
     alert("Thank you for your message! We will get back to you soon.");
-    setFormData({ name: "", email: "", message: "" }); // Clear the form
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -63,7 +59,7 @@ const App = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2c90ba]"
               placeholder="Your Name"
               required
             />
@@ -83,7 +79,7 @@ const App = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2c90ba]"
               placeholder="your.email@example.com"
               required
             />
@@ -104,7 +100,7 @@ const App = () => {
               onChange={handleChange}
               // Corrected: rows now takes a number, not a string
               rows={5}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500 resize-y"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2c90ba] resize-y"
               placeholder="Your message..."
               required
             ></textarea>
@@ -113,7 +109,7 @@ const App = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full px-6 py-3 bg-sky-500 text-white font-semibold rounded-md shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition duration-300 ease-in-out"
+            className="w-full px-6 py-3 bg-[#2c90ba] text-white font-semibold rounded-md shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition duration-300 ease-in-out"
           >
             Send Message
           </button>
