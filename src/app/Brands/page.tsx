@@ -57,7 +57,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
@@ -73,7 +73,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
@@ -93,7 +93,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
@@ -109,7 +109,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
@@ -129,7 +129,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
@@ -149,7 +149,7 @@ export default function BrandsPage() {
             <p className="text-center text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-gray-800 hover:bg-gray-500 transition duration-300">
+            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Website
             </button>
           </div>
