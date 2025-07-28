@@ -8,10 +8,10 @@ export default function HomePage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/h1-1.png" // Image file from the public folder
+            src="/h1-2.png"
             alt="Channel Link"
-            layout="fill" // This will make it cover the div size
-            objectFit="cover" // To maintain the aspect ratio and cover the full section
+            layout="fill"
+            objectFit="cover"
           />
         </div>
 
@@ -184,7 +184,7 @@ export default function HomePage() {
           {/* Box 4 */}
           <div className="w-full sm:w-[48%] md:w-[22%] bg-none rounded-lg shadow-lg flex flex-col items-center relative">
             {/* Button */}
-            <button className="absolute bottom-4 w-[80%]  px-6  bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
+            <button className="absolute bottom-4 xl:h-[50px] w-[80%]  px-6  bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
               Marketplace Representation
             </button>
 
