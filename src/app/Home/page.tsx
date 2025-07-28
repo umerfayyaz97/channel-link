@@ -218,7 +218,7 @@ export default function HomePage() {
         </div>
 
         {/* Image Row */}
-        <div className="flex justify-center -mb-6 mt-6 gap-4">
+        <div className="flex justify-center -mb-6 mt-6 sm:gap-6 lg:gap-10">
           {/* Box 1 */}
           <div className="relative w-[130px] h-[150px] bg-none overflow-hidden">
             <Image
