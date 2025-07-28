@@ -58,7 +58,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Game in stock
             </button>
           </div>
 
@@ -74,7 +74,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Rare Spawn
             </button>
           </div>
 
@@ -94,7 +94,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Hatch Labs
             </button>
           </div>
 
@@ -110,7 +110,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Respawn Direct
             </button>
           </div>
 
@@ -130,7 +130,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Geek Theory
             </button>
           </div>
 
@@ -150,7 +150,7 @@ export default function BrandsPage() {
               A short description of the brand and what it offers.
             </p>
             <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Website
+              Visit Sliq Gaming
             </button>
           </div>
         </div>
