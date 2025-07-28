@@ -14,7 +14,7 @@ export default function BrandsPage() {
             className="z-0"
           />
         </div>
-        <div className="relative lg:ml-28 z-20 flex flex-col justify-center items-start w-full h-full text-white space-y-6 px-8">
+        <div className="relative xl:px-70 lg:ml-28 z-20 flex flex-col justify-center items-start w-full h-full text-white space-y-6 px-8">
           <h1 className="text-3xl sm:text-4xl lg:w-[400px] md:text-5xl font-bold">
             Channel Link Properties
           </h1>
@@ -39,11 +39,11 @@ export default function BrandsPage() {
         </div>
 
         {/* Grid of 6 boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-16 px-8 max-w-7xl mx-auto">
+        <div className="grid  xl:px-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-16 px-8 max-w-7xl mx-auto">
           {/* Reusable Card Structure applied to all boxes */}
 
           {/* Box 1 */}
-          <div className="flex flex-col bg-white border border-black rounded-lg p-6">
+          <div className="flex xl:h-[250px]  flex-col bg-white border border-black rounded-lg p-6">
             {/* Standardized container for logo/heading */}
             <div className="flex items-center justify-center h-16 mb-6">
               <Image
@@ -54,10 +54,10 @@ export default function BrandsPage() {
                 style={{ objectFit: "contain", height: "42px", width: "auto" }}
               />
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Game in stock
             </button>
           </div>
@@ -70,10 +70,10 @@ export default function BrandsPage() {
                 RARE SPAWN
               </h2>
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Rare Spawn
             </button>
           </div>
@@ -90,26 +90,26 @@ export default function BrandsPage() {
                 style={{ objectFit: "contain", height: "42px", width: "auto" }}
               />
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Hatch Labs
             </button>
           </div>
 
           {/* Box 4 */}
-          <div className="flex flex-col bg-white border border-black rounded-lg p-6">
+          <div className="flex xl:h-[250px] flex-col bg-white border border-black rounded-lg p-6">
             {/* Standardized container for logo/heading */}
             <div className="flex items-center justify-center h-16 mb-6">
               <h2 className="text-2xl font-bold text-center italic">
                 RESPAWNDIRECT
               </h2>
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Respawn Direct
             </button>
           </div>
@@ -126,10 +126,10 @@ export default function BrandsPage() {
                 style={{ objectFit: "contain", height: "42px", width: "auto" }}
               />
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start mt-4 xl:mb-6 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Geek Theory
             </button>
           </div>
@@ -146,10 +146,10 @@ export default function BrandsPage() {
                 style={{ objectFit: "contain", height: "42px", width: "auto" }}
               />
             </div>
-            <p className="text-center text-sm text-gray-600 flex-grow">
+            <p className="text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Sliq Gaming
             </button>
           </div>

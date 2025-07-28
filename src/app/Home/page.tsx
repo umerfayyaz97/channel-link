@@ -1,4 +1,30 @@
 import Image from "next/image";
+const cardData = [
+  {
+    imageSrc: "/h3.1.png",
+    buttonText: "Internet 3P Retailing",
+  },
+  {
+    imageSrc: "/h3.2.png",
+    buttonText: "Bulk Buys",
+  },
+  {
+    imageSrc: "/h3.3.png",
+    buttonText: "Private Label",
+  },
+  {
+    imageSrc: "/h3.4.png",
+    buttonText: "Marketplace Representation",
+  },
+];
+
+const brandLogos = [
+  { src: "/xbox1.png", alt: "Xbox" },
+  { src: "/htc.png", alt: "HTC" },
+  { src: "/polaroid.png", alt: "Polaroid" },
+  { src: "/ps.png", alt: "PlayStation" },
+  { src: "/linksys.png", alt: "Linksys" },
+];
 
 export default function HomePage() {
   return (
@@ -16,9 +42,9 @@ export default function HomePage() {
         </div>
 
         {/* Left Section: Heading and Paragraph */}
-        <div className="relative z-20 w-full md:w-1/2 -mt-8  text-white space-y-6 flex flex-col items-start justify-center px-4 md:px-12 ml-0 md:ml-20  md:mt-0">
+        <div className="relative z-20 xl:px-68 w-full md:w-1/2 -mt-8  text-white space-y-6 flex flex-col items-start justify-center px-4 md:px-12 ml-0 md:ml-20  md:mt-0">
           {/* Heading */}
-          <h1 className="text-3xl sm:text-3xl md:text-5xl">
+          <h1 className="text-3xl sm:text-3xl font-display md:text-5xl">
             Connect your brand with customers that convert.
           </h1>
 
@@ -30,13 +56,12 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
       {/* Second Section with Grey Background */}
       <section className="bg-[#3b3b3b] py-20 px-4 md:px-12 max-h-[470px]">
         {/* Heading, Description, and Button Container */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
           {/* Left Section: Heading and Description */}
-          <div className="text-white space-y-6 lg:-mt-24 md:w-1/2 flex flex-col items-start justify-center px-4 md:px-12 ml-0 md:ml-20">
+          <div className="text-white xl:px-68 space-y-6 lg:-mt-24 md:w-1/2 flex flex-col items-start justify-center px-4 md:px-12 ml-0 md:ml-20">
             {/* Heading */}
             <h1 className="text-2xl sm:text-3xl md:text-5xl">What we do</h1>
 
@@ -51,7 +76,7 @@ export default function HomePage() {
 
             {/* Button */}
             <div className="mt-4 sm:mb-4 sm:mt-0 md:mt-0">
-              <button className="px-4 py-2 bg-[#2c90ba] text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none">
+              <button className="px-4 py-2 bg-[#2c90ba]  text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none">
                 Read More
               </button>
             </div>
@@ -107,110 +132,49 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* section 3 */}
+      {/* Section 3: What we offer */}
       <section className="py-20 px-4 md:px-12">
-        {/* Heading and Paragraph */}
         <div className="text-center space-y-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
             What we offer
-          </h1>
-          <p className="text-base lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">
+          </h2>
+          <p className="text-base md:text-xl text-black max-w-2xl mx-auto">
             Our role goes beyond logistics - we serve as a strategic extension
             of your business, guiding your products to their most effective
             market destinations.
           </p>
         </div>
-
-        {/* 4 Boxes with Buttons */}
-        <div className="flex flex-wrap gap-4 justify-center mt-10">
-          {/* Box 1 */}
-          <div className="w-full sm:w-[48%] md:w-[22%] bg-none rounded-lg shadow-lg flex flex-col items-center relative">
-            {/* Button */}
-            <button className="absolute bottom-4 w-[80%] px-6 py-3 bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
-              Internet 3P Retailing
-            </button>
-
-            {/* Image 1 */}
-            <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
+        {/* FIX: Changed the container to CSS Grid for a perfect 4-column layout */}
+        <div className="mt-10 xl:px-58 xl:gap-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {cardData.map((card) => (
+            <div
+              key={card.buttonText}
+              // FIX: Removed manual width classes like lg:w-1/4
+              className="w-full xl:w-[300px]  max-w-sm mx-auto h-[400px] bg-none rounded-lg shadow-lg relative transition-transform duration-300 ease-in-out hover:-translate-y-4"
+            >
               <Image
-                src="/h3.1.png" // Ensure the image path is correct relative to the "public" directory
-                alt="Image 1"
+                src={card.imageSrc}
+                alt={card.buttonText}
                 layout="fill"
                 objectFit="cover"
-                className="transition-all duration-500 ease-in-out hover:scale-105"
+                className="rounded-lg"
               />
+              <button className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[85%] px-4 py-3 bg-black/30 text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/40 focus:outline-none z-10 text-center break-words">
+                {card.buttonText}
+              </button>
             </div>
-          </div>
-
-          {/* Box 2 */}
-          <div className="w-full sm:w-[48%] md:w-[22%] bg-none rounded-lg shadow-lg flex flex-col items-center relative">
-            {/* Button */}
-            <button className="absolute bottom-4 w-[80%] px-6 py-3 bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
-              Bulk Buys
-            </button>
-
-            {/* Image 2 */}
-            <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
-              <Image
-                src="/h3.2.png" // Ensure the image path is correct
-                alt="Image 2"
-                layout="fill"
-                objectFit="cover"
-                className="transition-all duration-500 ease-in-out hover:scale-105"
-              />
-            </div>
-          </div>
-
-          {/* Box 3 */}
-          <div className="w-full sm:w-[48%] md:w-[22%] bg-none rounded-lg shadow-lg flex flex-col items-center relative">
-            {/* Button */}
-            <button className="absolute bottom-4 w-[80%] px-6 py-3 bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
-              Private Label
-            </button>
-
-            {/* Image 3 */}
-            <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
-              <Image
-                src="/h3.3.png" // Ensure the image path is correct
-                alt="Image 3"
-                layout="fill"
-                objectFit="cover"
-                className="transition-all duration-500 ease-in-out hover:scale-105"
-              />
-            </div>
-          </div>
-
-          {/* Box 4 */}
-          <div className="w-full sm:w-[48%] md:w-[22%] bg-none rounded-lg shadow-lg flex flex-col items-center relative">
-            {/* Button */}
-            <button className="absolute bottom-4 xl:h-[50px] w-[80%]  px-6  bg-transparent text-white border-2 border-white rounded-lg backdrop-blur-md hover:bg-sky-500/25 focus:outline-none z-10 text-center break-words">
-              Marketplace Representation
-            </button>
-
-            {/* Image 4 */}
-            <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
-              <Image
-                src="/h3.4.png" // Ensure the image path is correct
-                alt="Image 4"
-                layout="fill"
-                objectFit="cover"
-                className="transition-all duration-500 ease-in-out hover:scale-105"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </section>
-
-      {/* section 4 */}
-
+      ;{/* section 4 */}
       <section className="py-6 px-4 -mb-14 md:px-12 bg-black">
         {/* Heading and Paragraph */}
         <div className="text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl text-white">
             Brand’s we’ve worked with
           </h1>
-          <p className="text-base lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-white">
+          <p className="text-base xl:ml-160 lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-white">
             We partner with some of the most influential brands in the world to
             offer consumers affordable products and services tailored to their
             needs.

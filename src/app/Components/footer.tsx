@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="max-w-full mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
         {/* First Column: Company Name & Description */}
         <div className="w-full md:w-1/3 text-center mr-14 ml-8 md:text-left">
-          <h2 className="text-3xl font-extrabold text-[#2c90ba] italic">
+          <h2 className="text-3xl font-display font-extrabold text-[#2c90ba] italic">
             CHANNEL LINK
           </h2>
           <p className="mt-2 text-sm text-gray-500">
