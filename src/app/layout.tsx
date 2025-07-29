@@ -39,17 +39,24 @@
 
 // app/layout.tsx
 import type { Metadata } from "next";
-// 1. Import 'localFont' and remove 'Geist'
+// 1. Import 'localFont'
 import localFont from "next/font/local";
 import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
 
-// 2. Define your local font
+// 2. Define your main custom font
 const customFont = localFont({
-  src: "./fonts/Adrianna-Regular.ttf", // <-- Replace with your actual filename
+  src: "./fonts/Adrianna-Regular.ttf", // <-- Your existing font
   variable: "--font-sans", // This will be your main sans-serif font
+  display: "swap",
+});
+
+// 3. Define the new Avenir-Medium font
+const avenirFont = localFont({
+  src: "./fonts/Avenir-Medium.ttf", // Path to your Avenir-Medium font file
+  variable: "--font-avenir", // New CSS variable for Avenir
   display: "swap",
 });
 
@@ -72,8 +79,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // 3. Use your new font's variable
-        className={`${customFont.variable} ${geistMono.variable} antialiased`}
+        // 4. Use all font variables in the body class
+        className={`${customFont.variable} ${geistMono.variable} ${avenirFont.variable} antialiased`}
       >
         <Navbar />
         {children}

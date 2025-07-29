@@ -41,6 +41,8 @@ body {
   --color-foreground: var(--foreground);
   /* The --font-sans variable is now provided directly from layout.tsx */
   --font-mono: var(--font-geist-mono);
+  /* Define a custom property for Avenir font family */
+  --font-avenir-family: 'Avenir-Medium', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,4 +57,9 @@ body {
   color: var(--foreground);
   /* Use the CSS variable to apply your custom font */
   font-family: var(--font-sans);
+}
+
+/* New class for Avenir font */
+.font-avenir {
+  font-family: var(--font-avenir);
 }
