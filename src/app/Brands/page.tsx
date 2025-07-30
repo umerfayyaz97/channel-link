@@ -18,7 +18,7 @@ export default function BrandsPage() {
           <h1 className="text-3xl sm:text-4xl lg:w-[400px] md:text-5xl font-bold">
             Channel Link Properties
           </h1>
-          <p className="lg:text-[14px] sm:text-sm md:text-xl lg:w-[350px] max-w-3xl">
+          <p className="lg:text-[14px] font-avenir-family sm:text-sm md:text-xl lg:w-[350px] max-w-3xl">
             Through our portfolio of brands, we empower people to find, buy, and
             use products and services that improve their everyday lives.
           </p>
@@ -29,7 +29,7 @@ export default function BrandsPage() {
       <section className="bg-[#eeeeee] py-16">
         {/* Paragraph in the center */}
         <div className=" mb-12 px-4">
-          <p className="text-base lg:w-[650px] mx-auto text-gray-700">
+          <p className="text-base lg:w-[650px] font-avenir-family mx-auto text-gray-700">
             We have a diverse portfolio of brands, and we acquire existing
             brands that fit our mission to empower people to make better
             decisions. Our brands focus on helping people navigate the
@@ -57,7 +57,7 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Game in stock
             </button>
           </div>
@@ -73,7 +73,7 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Rare Spawn
             </button>
           </div>
@@ -93,7 +93,7 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Hatch Labs
             </button>
           </div>
@@ -109,7 +109,7 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Respawn Direct
             </button>
           </div>
@@ -129,7 +129,7 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start mt-4 xl:mb-6 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family mt-4 xl:mb-6 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Geek Theory
             </button>
           </div>
@@ -149,7 +149,7 @@ export default function BrandsPage() {
             <p className="text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
               Visit Sliq Gaming
             </button>
           </div>

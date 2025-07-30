@@ -21,7 +21,7 @@ export default function AboutUs() {
             <br className="hidden lg:block" />
             eCommerce retailer
           </h1>
-          <p className="text-lg sm:text-sm md:text-xl max-w-3xl px-4">
+          <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl px-4">
             Our role goes beyond logistics - we serve as a strategic extension
             of your business, guiding your products to their most effective
             market destinations.
@@ -32,13 +32,16 @@ export default function AboutUs() {
       {/* Second Section: Two Paragraphs on White Background */}
       <div className="py-16 px-4 bg-white text-black">
         <div className="max-w-3xl mx-auto space-y-6 text-left">
-          <p className="text-lg sm:text-sm md:text-xl">
-            At CHANNEL LINK, we are committed to building lasting partnerships
-            with our clients. Our team works tirelessly to ensure the success of
-            our business relationships by providing tailored solutions that
-            address each client’s unique needs.
+          <p className="text-lg sm:text-sm font-avenir-family md:text-xl">
+            We are more than just an e-commerce company. We are a multi-service
+            retail partner dedicated to helping brands and companies succeed
+            across a dynamic digital marketplace. Through our specialized
+            business verticals—including Internet 3P Retailing, Bulk Buys, Our
+            In-House Brands, and Marketplace Representation—we provide our
+            partners with tailored strategies that maximize reach, drive
+            sell-through, and strengthen long-term brand value.
           </p>
-          <p className="text-lg sm:text-sm md:text-xl">
+          <p className="text-lg hidden sm:text-sm font-avenir-family md:text-xl">
             With our extensive experience and expertise, we ensure that your
             products are distributed to the most effective channels, allowing
             you to reach your target customers seamlessly and efficiently.
@@ -60,11 +63,13 @@ export default function AboutUs() {
               <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.1.svg" alt="Vertical 1" />
               </div>
-              <p className="mb-4">
-                This is a description of the vertical, explaining the services
-                or products offered in this category.
+              <p className="mb-4 text-sm font-bold">
+                We retail for our authorized vendors products through our
+                various e-ommerce properties
               </p>
-              <h3 className="text-lg font-bold">Internet 3P Retailing</h3>
+              <h3 className="text-lg mt-auto font-black">
+                Internet 3P Retailing
+              </h3>
             </div>
 
             {/* Box 2 */}
@@ -72,11 +77,11 @@ export default function AboutUs() {
               <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.2.svg" alt="Vertical 2" />
               </div>
-              <p className="mb-4">
-                This is a description of the vertical, explaining the services
-                or products offered in this category.
+              <p className="mb-4 font-bold text-sm">
+                We work with wholesalers, liquidators, refurbishers and closeout
+                vendors looking to sell their production in bulk
               </p>
-              <h3 className="text-lg font-bold">Bulk Buys</h3>
+              <h3 className="text-lg mt-auto font-black">Bulk Buys</h3>
             </div>
 
             {/* Box 3 */}
@@ -84,11 +89,12 @@ export default function AboutUs() {
               <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.3.svg" alt="Vertical 3" />
               </div>
-              <p className="mb-4">
-                This is a description of the vertical, explaining the services
-                or products offered in this category.
+              <p className="mb-4 text-sm font-bold">
+                We produce and carry various in-house brands. We work closely
+                with our manufacturer partners to develop products to cater to
+                our customer market and collaboration swith our brand partners.
               </p>
-              <h3 className="text-lg font-bold">Private Label</h3>
+              <h3 className="text-lg mt-auto font-black bottom">Our Brands</h3>
             </div>
 
             {/* Box 4 */}
@@ -96,11 +102,12 @@ export default function AboutUs() {
               <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.4.svg" alt="Vertical 4" />
               </div>
-              <p className="mb-4">
-                This is a description of the vertical, explaining the services
-                or products offered in this category.
+              <p className="mb-4  font-bold text-sm">
+                We are an extension of our partnered brands. We are a strategic
+                partner that collaborated with our brand partners to help
+                elevate their marketplace representation.
               </p>
-              <h3 className="text-base font-bold">
+              <h3 className="text-lg mt-auto  font-black">
                 Marketplace Representation
               </h3>
             </div>
