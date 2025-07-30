@@ -60,12 +60,12 @@ export default function AboutUs() {
           <div className="grid xl:px-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {/* Box 1 */}
             <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
-              <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.1.svg" alt="Vertical 1" />
               </div>
               <p className="mb-4 text-sm font-bold">
                 We retail for our authorized vendors products through our
-                various e-ommerce properties
+                various e-commerce properties
               </p>
               <h3 className="text-lg mt-auto font-black">
                 Internet 3P Retailing
@@ -74,38 +74,38 @@ export default function AboutUs() {
 
             {/* Box 2 */}
             <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
-              <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.2.svg" alt="Vertical 2" />
               </div>
               <p className="mb-4 font-bold text-sm">
                 We work with wholesalers, liquidators, refurbishers and closeout
-                vendors looking to sell their production in bulk
+                vendors looking to sell their products in bulk
               </p>
               <h3 className="text-lg mt-auto font-black">Bulk Buys</h3>
             </div>
 
             {/* Box 3 */}
             <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
-              <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.3.svg" alt="Vertical 3" />
               </div>
               <p className="mb-4 text-sm font-bold">
                 We produce and carry various in-house brands. We work closely
                 with our manufacturer partners to develop products to cater to
-                our customer market and collaboration swith our brand partners.
+                our customer market and collaborations with our brand partners.
               </p>
               <h3 className="text-lg mt-auto font-black bottom">Our Brands</h3>
             </div>
 
             {/* Box 4 */}
             <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
-              <div className="w-16 h-16 flex justify-center items-center mb-4 self-center">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
                 <img src="/a2.4.svg" alt="Vertical 4" />
               </div>
               <p className="mb-4  font-bold text-sm">
                 We are an extension of our partnered brands. We are a strategic
-                partner that collaborated with our brand partners to help
-                elevate their marketplace representation.
+                partner that collaborates with our brand partners to help
+                elevate their marketplace presence.
               </p>
               <h3 className="text-lg mt-auto  font-black">
                 Marketplace Representation
