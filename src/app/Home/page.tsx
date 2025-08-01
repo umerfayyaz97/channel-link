@@ -11,6 +11,8 @@ import { Autoplay, Controller } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 
+import Link from "next/link";
+
 const cardData = [
   {
     imageSrc: "/h3.1.png",
@@ -89,9 +91,12 @@ export default function HomePage() {
               partnerships, and ecommerce operations.
             </p>
             <div className="mt-4 sm:mb-4 sm:mt-0 md:mt-0">
-              <button className="px-4 py-2 font-avenir-family bg-[#0092be] text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none">
+              <Link
+                href="/Company/about-us"
+                className="px-4 py-2 font-avenir-family bg-[#0092be] text-white rounded-full text-lg hover:bg-blue-500 focus:outline-none"
+              >
                 Read More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="flex flex-wrap gap-2 md:w-1/2 justify-start">
@@ -172,7 +177,7 @@ export default function HomePage() {
       <section className="py-6 px-4 md:px-12 bg-[#e6e6e6]">
         <div className="text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl  text-[#0092be]">
-            Brand’s We’ve Worked With
+            Your Brand is Our Brand
           </h1>
           <p className="text-base xl:ml-160 font-avenir-family lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">
             We partner with some of the most influential brands in the world to

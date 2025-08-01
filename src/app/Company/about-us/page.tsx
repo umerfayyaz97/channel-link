@@ -120,7 +120,7 @@ export default function AboutUs() {
         <div className="text-center space-y-6">
           {/* Corrected typo from text-2xlxl to text-3xl for consistency */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
-            Marketplace We Specialize In
+            Marketplaces We Specialize In
           </h2>
         </div>
 
