@@ -109,7 +109,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                href="/Services"
+                href="/Company/about-us"
                 className="text-gray-500 font-avenir-family hover:text-[#0092be]"
               >
                 Services

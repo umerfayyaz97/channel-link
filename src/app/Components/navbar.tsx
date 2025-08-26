@@ -116,7 +116,7 @@ const Navbar = () => {
           </div>
 
           <Link
-            href="/Services"
+            href="/Company/about-us"
             className="hover:text-[#0092be] font-avenir-family  transition duration-300"
           >
             Services
