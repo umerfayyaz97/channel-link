@@ -86,7 +86,7 @@ export default function AboutUs() {
                 through a deep understanding of marketplace dynamics, strategic
                 partnerships, and eCommerce operations.
               </p>
-              <div>
+              <div className="mt-4">
                 <a
                   // href="#read-more"
                   className=" items-center rounded-full bg-[#08647e] hover:bg-blue-700 text-white font-semibold px-6 py-3 shadow-sm transition"
