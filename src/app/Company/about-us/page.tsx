@@ -59,8 +59,8 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Second Section: Two Columns */}
-      <section className="relative bg-[#09a8d2] text-white">
+      {/* Second Section: Two Columns on same #0aa7d2 background */}
+      <section className="relative bg-[#0aa7d2] text-white">
         {/* On mobile, optionally show the image behind the text with low opacity */}
         <div className="absolute inset-0 sm:hidden pointer-events-none">
           <Image
@@ -164,9 +164,7 @@ export default function AboutUs() {
                   className="fill-[#0092be]"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-[#0092be] ">
-                Private Label
-              </h3>
+              <h3 className="text-2xl font-bold text-[#0092be] ">Our Brands</h3>
             </div>
 
             {/* Box 4 */}
