@@ -1,56 +1,26 @@
-"use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper core and required modules
-import type { Swiper as SwiperInstance } from "swiper"; // ✅ FIX: Import Swiper instance type
-import { Autoplay, Controller } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-
-const logos = [
-  "/brand1.png",
-  "/brand2.png",
-  "/brand3.1.png",
-  "/brand4.png",
-  "/brand5.1.png",
-  "/brand6.1.png",
-  "/brand7.1.png",
-  "/brand8.1.png",
-  "/brand9.jpeg",
-  "/brand10.1.png",
-  "/brand11.1.png",
-  "/brand12.1.png",
-  "/brand13.png",
-  "/brand14.png",
-];
 
 export default function AboutUs() {
-  const [firstSwiper, setFirstSwiper] = useState<SwiperInstance | null>(null);
-  const [thirdSwiper, setThirdSwiper] = useState<SwiperInstance | null>(null);
   return (
     <div>
       {/* First Section: Background Image with Overlay */}
-      <div className="relative w-full h-[495px]">
+      <div className="relative w-full h-[314px]">
         <div className="absolute inset-0">
           <Image
-            src="/a1-new.png"
+            src="/a1o.png"
             alt="About Us Background"
             layout="fill"
             objectFit="cover"
-            className="z-0 "
+            className="z-0"
           />
         </div>
+        <div className="absolute inset-0 bg-[#174153] opacity-70 z-10"></div>
         <div className="relative z-20 flex flex-col justify-center items-center w-full h-full text-center text-white space-y-6">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl text-left lg:-ml-66">
-            <span className="block">One Company,</span>
-            <span className="block text-[#0092be]">Endless</span>
-            <span className="block">Solutions.</span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl">
+            We are a Prime,
+            <br className="hidden lg:block" />
+            eCommerce retailer
           </h1>
-
           <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl px-4">
             Our role goes beyond logistics - we serve as a strategic extension
             of your business, guiding your products to their most effective
@@ -59,124 +29,85 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Second Section: Two Columns on same #0aa7d2 background */}
-      <section className="relative bg-[#0aa7d2] text-white">
-        {/* On mobile, optionally show the image behind the text with low opacity */}
-        <div className="absolute inset-0 sm:hidden pointer-events-none">
-          <Image
-            src="/a2-new-nobg.png"
-            alt="Background graphic"
-            fill
-            className="object-cover opacity-20"
-            priority={false}
-          />
+      {/* Second Section: Two Paragraphs on White Background */}
+      <div className="py-16 px-4 bg-white text-black">
+        <div className="max-w-3xl mx-auto space-y-6 text-left">
+          <p className="text-lg sm:text-sm font-avenir-family md:text-xl">
+            We are more than just an e-commerce company. We are a multi-service
+            retail partner dedicated to helping brands and companies succeed
+            across a dynamic digital marketplace. Through our specialized
+            business verticals—including Internet 3P Retailing, Bulk Buys, Our
+            In-House Brands, and Marketplace Representation—we provide our
+            partners with tailored strategies that maximize reach, drive
+            sell-through, and strengthen long-term brand value.
+          </p>
+          <p className="text-lg hidden sm:text-sm font-avenir-family md:text-xl">
+            With our extensive experience and expertise, we ensure that your
+            products are distributed to the most effective channels, allowing
+            you to reach your target customers seamlessly and efficiently.
+          </p>
         </div>
+      </div>
 
-        <div className="relative max-w-7xl   mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
-            {/* Left column: heading, paragraph, button */}
-            <div className="space-y-5 flex flex-col justify-between">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl  ">
-                How we do it.
-              </h2>
-              <p className="text-base sm:text-sm md:text-lg font-avenir-family max-w-prose">
-                Channel Link is a trusted global trade solutions partner,
-                helping companies navigate complexities of modern commerce. We
-                specialize in connecting products with the right channels
-                through a deep understanding of marketplace dynamics, strategic
-                partnerships, and eCommerce operations.
-              </p>
-              <div>
-                <a
-                  // href="#read-more"
-                  className=" items-center rounded-full bg-[#08647e] hover:bg-blue-700 text-white font-semibold px-6 py-3 shadow-sm transition"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-
-            {/* Right column: image (hidden on mobile) */}
-            <div className="relative hidden md:-mb-16 sm:block">
-              {/* Replace src with your final asset; using fill keeps it responsive */}
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src="/a2-new-nobg.png"
-                  alt="About our services visual"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Third Section: What We Offer and Business Verticals */}
-      <div className="py-16 lg:px-20 md:mb-10 bg-white text-black">
+      {/* Third Section: Business Verticals */}
+      <div className="py-16 lg:px-20 bg-white text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* New Heading and Paragraph */}
-          <div className="text-center space-y-6 mb-12">
+          <div className="text-center space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
-              What we offer
+              Business Verticals
             </h2>
-            <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl mx-auto">
-              Our role goes beyond logistics – we serve as a strategic extension
-              of your business, guiding your products to their most effective
-              market destinations.
-            </p>
           </div>
-
-          {/* Business Verticals Boxes */}
           <div className="grid xl:px-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {/* Box 1 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 flex justify-center items-center mb-4 self-center">
-                <img
-                  src="/a2.1-new.png"
-                  alt="Vertical 1"
-                  className="fill-[#0092be]"
-                />
+            <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
+                <img src="/a2.1.svg" alt="Vertical 1" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0092be] ">
+              <p className="mb-4 text-sm font-bold">
+                We retail for our authorized vendors products through our
+                various e-commerce properties
+              </p>
+              <h3 className="text-lg mt-auto font-black">
                 Internet 3P Retailing
               </h3>
             </div>
 
             {/* Box 2 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 flex justify-center items-center mb-4 self-center">
-                <img
-                  src="/a2.2-new.png"
-                  alt="Vertical 2"
-                  className="fill-[#0092be]"
-                />
+            <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
+                <img src="/a2.2.svg" alt="Vertical 2" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0092be] ">Bulk Buys</h3>
+              <p className="mb-4 font-bold text-sm">
+                We work with wholesalers, liquidators, refurbishers and closeout
+                vendors looking to sell their products in bulk
+              </p>
+              <h3 className="text-lg mt-auto font-black">Bulk Buys</h3>
             </div>
 
             {/* Box 3 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 flex justify-center items-center mb-4 self-center">
-                <img
-                  src="/a2.3-new.png"
-                  alt="Vertical 3"
-                  className="fill-[#0092be]"
-                />
+            <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
+                <img src="/a2.3.svg" alt="Vertical 3" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0092be] ">Our Brands</h3>
+              <p className="mb-4 text-sm font-bold">
+                We produce and carry various in-house brands. We work closely
+                with our manufacturer partners to develop products to cater to
+                our customer market and collaborations with our brand partners.
+              </p>
+              <h3 className="text-lg mt-auto font-black bottom">Our Brands</h3>
             </div>
 
             {/* Box 4 */}
-            <div className="flex flex-col items-center text-center">
-              <div className="w-24 h-24 flex justify-center items-center mb-4 self-center">
-                <img
-                  src="/a2.4-new.png"
-                  alt="Vertical 4"
-                  className="fill-[#0092be]"
-                />
+            <div className="bg-[#a6cad9] text-black rounded-lg p-6 flex flex-col items-start text-left">
+              <div className="w-20 h-20 flex justify-center items-center mb-4 self-center">
+                <img src="/a2.4.svg" alt="Vertical 4" />
               </div>
-              <h3 className="text-2xl font-bold text-[#0092be] ">
+              <p className="mb-4  font-bold text-sm">
+                We are an extension of our partnered brands. We are a strategic
+                partner that collaborates with our brand partners to help
+                elevate their marketplace presence.
+              </p>
+              <h3 className="text-lg mt-auto  font-black">
                 Marketplace Representation
               </h3>
             </div>
@@ -185,117 +116,53 @@ export default function AboutUs() {
       </div>
 
       {/* Fourth Section: Marketplace We Specialize In with Light Grey Background */}
-      <section className="py-6 px-4 md:px-12 bg-[#e6e6e6]">
-        <div className="text-center space-y-4">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl mt-12  text-[#0092be]">
-            Brand’s we’ve work with
-          </h1>
-          <p className="text-base xl:ml-160 font-avenir-family lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">
-            We partner with some of the most influential brands in the world to
-            offer consumers affordable products and services tailored to their
-            needs.
-          </p>
+      <div className="py-16 px-4 bg-gray-100 text-black">
+        <div className="text-center space-y-6">
+          {/* Corrected typo from text-2xlxl to text-3xl for consistency */}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
+            Marketplaces We Specialize In
+          </h2>
         </div>
 
-        {/* Carousel 1: Controller */}
-        <Swiper
-          modules={[Autoplay, Controller]}
-          // ✅ FIX: Wrap the setter in a function to match the expected type
-          onSwiper={(swiper) => setFirstSwiper(swiper)}
-          controller={{ control: thirdSwiper }}
-          spaceBetween={40}
-          slidesPerView={6}
-          loop={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: { slidesPerView: 2 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="swiper-container mt-6"
-        >
-          {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-32">
-                <Image
-                  src={logo}
-                  alt={`Brand logo ${index + 1}`}
-                  width={150}
-                  height={150}
-                  objectFit="contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {/* Logos Section */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:px-70 xl:gap-0 gap-6 mt-18">
+          {/* Logo 1 */}
+          <div className=" flex justify-center items-center p-4">
+            <img
+              src="/a3.1.png"
+              alt="Company 1 Logo"
+              className="xl:w-[200px]  w-32 h-auto"
+            />
+          </div>
 
-        {/* Carousel 2: Moves Independently */}
-        <Swiper
-          dir="rtl"
-          modules={[Autoplay]}
-          spaceBetween={40}
-          slidesPerView={6}
-          loop={true}
-          autoplay={{
-            delay: 1500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: { slidesPerView: 2 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="swiper-container mt-6"
-        >
-          {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-32">
-                <Image
-                  src={logo}
-                  alt={`Brand logo ${index + 1}`}
-                  width={150}
-                  height={150}
-                  objectFit="contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          {/* Logo 2 */}
+          <div className=" flex justify-center items-center p-4">
+            <img
+              src="/a3.2.png"
+              alt="Company 2 Logo"
+              className="w-32 xl:w-[200px] h-auto"
+            />
+          </div>
 
-        {/* Carousel 3: Controlled by the first carousel */}
-        <Swiper
-          modules={[Controller]}
-          // ✅ FIX: Wrap the setter in a function to match the expected type
-          onSwiper={(swiper) => setThirdSwiper(swiper)}
-          controller={{ control: firstSwiper }}
-          spaceBetween={40}
-          slidesPerView={6}
-          loop={true}
-          breakpoints={{
-            320: { slidesPerView: 2 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
-          }}
-          className="swiper-container mt-6 mb-14"
-        >
-          {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-32">
-                <Image
-                  src={logo}
-                  alt={`Brand logo ${index + 1}`}
-                  width={150}
-                  height={150}
-                  objectFit="contain"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
+          {/* Logo 3 */}
+          <div className=" flex justify-center items-center p-4">
+            <img
+              src="/a3.3.png"
+              alt="Company 3 Logo"
+              className="w-32 xl:w-[200px] h-auto"
+            />
+          </div>
+
+          {/* Logo 4 */}
+          <div className=" flex justify-center items-center p-4">
+            <img
+              src="/a3.4.png"
+              alt="Company 4 Logo"
+              className="w-32 xl:w-[200px] h-auto"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
