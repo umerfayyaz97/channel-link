@@ -172,7 +172,7 @@ const Navbar = () => {
                       About Us
                     </Link>
                     <Link
-                      href="/Company/leadership"
+                      href="/Company/about-us"
                       className="block px-4 py-2 bg-[#0092be]  text-white hover:bg-black"
                     >
                       Leadership
