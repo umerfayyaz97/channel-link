@@ -8,15 +8,15 @@ import Footer from "./Components/footer";
 
 // 2. Define your main custom font
 const customFont = localFont({
-  src: "./fonts/Adrianna-Regular.ttf", // <-- Your existing font
-  variable: "--font-sans", // This will be your main sans-serif font
+  src: "./fonts/Adrianna-Regular.ttf",
+  variable: "--font-sans",
   display: "swap",
 });
 
 // 3. Define the new Avenir-Medium font
 const avenirFont = localFont({
-  src: "./fonts/Avenir-Medium.ttf", // Path to your Avenir-Medium font file
-  variable: "--font-avenir", // New CSS variable for Avenir
+  src: "./fonts/Avenir-Medium.ttf",
+  variable: "--font-avenir",
   display: "swap",
 });
 
@@ -29,7 +29,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Channel link",
   description: " ",
-  icons: "/favicon.png",
+  // icons: "/favicon.ico",
 };
 
 export default function RootLayout({

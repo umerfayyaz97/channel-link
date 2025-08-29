@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BrandsPage() {
   return (
@@ -57,62 +58,23 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Game in stock
-            </button>
+            <Link
+              href="https://gameinstock.com"
+              className="self-start "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+                Visit Game in stock
+              </button>
+            </Link>
           </div>
 
           {/* Box 2 */}
-          <div className="flex flex-col bg-white border border-black rounded-lg p-6">
-            {/* Standardized container for logo/heading */}
-            <div className="flex items-center justify-center h-16 mb-6">
-              <h2 className="text-2xl font-bold text-center italic">
-                RARE SPAWN
-              </h2>
-            </div>
-            <p className=" text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
-            </p>
-            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Rare Spawn
-            </button>
-          </div>
 
           {/* Box 3 */}
-          <div className="flex flex-col bg-white border border-black rounded-lg p-6">
-            {/* Standardized container for logo/heading */}
-            <div className="flex items-center justify-center h-16 mb-6">
-              <Image
-                src="/b2.3n.png"
-                alt="Logo 3"
-                width={200}
-                height={42}
-                style={{ objectFit: "contain", height: "42px", width: "auto" }}
-              />
-            </div>
-            <p className=" text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
-            </p>
-            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Hatch Labs
-            </button>
-          </div>
 
           {/* Box 4 */}
-          <div className="flex xl:h-[250px] flex-col bg-white border border-black rounded-lg p-6">
-            {/* Standardized container for logo/heading */}
-            <div className="flex items-center justify-center h-16 mb-6">
-              <h2 className="text-2xl font-bold text-center italic">
-                RESPAWNDIRECT
-              </h2>
-            </div>
-            <p className=" text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
-            </p>
-            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Respawn Direct
-            </button>
-          </div>
 
           {/* Box 5 */}
           <div className="flex flex-col bg-white border border-black rounded-lg p-6">
@@ -129,9 +91,16 @@ export default function BrandsPage() {
             <p className=" text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start font-avenir-family mt-4 xl:mb-6 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Geek Theory
-            </button>
+            <Link
+              href="https://geektheory.com"
+              className="self-start "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="self-start font-avenir-family mt-4 xl:mb-6 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+                Visit Geek Theory
+              </button>
+            </Link>
           </div>
 
           {/* Box 6 */}
@@ -149,9 +118,16 @@ export default function BrandsPage() {
             <p className="text-sm text-gray-600 flex-grow">
               A short description of the brand and what it offers.
             </p>
-            <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-              Visit Sliq Gaming
-            </button>
+            <Link
+              href="https://www.amazon.com/s?k=sliq+gaming&crid=27R1WJSRBMB1D&sprefix=sliq+gaming%2Caps%2C187&ref=nb_sb_noss_1"
+              className="self-start "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
+                Visit Sliq Gaming
+              </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -589,25 +589,31 @@ import "swiper/css";
 import "swiper/css/autoplay";
 
 const logos = [
-  "/brand1.png",
-  "/brand2.png",
-  "/brand3.1.png",
-  "/brand4.png",
-  "/brand5.1.png",
-  "/brand6.1.png",
-  "/brand7.1.png",
-  "/brand8.1.png",
-  "/brand9.jpeg",
-  "/brand10.1.png",
-  "/brand11.1.png",
-  "/brand12.1.png",
-  "/brand13.png",
-  "/brand14.png",
+  "/brand (1).png",
+  "/brand (2).png",
+  "/brand (3).png",
+  "/brand (4).png",
+  "/brand (5).png",
+  "/brand (6).png",
+  "/brand (7).png",
+  "/brand (8).png",
+  "/brand (9).png",
+  "/brand (10).png",
+  "/brand (11).png",
+  "/brand (12).png",
+  "/brand (13).png",
+  "/brand (14).png",
+  "/brand (15).png",
+  "/brand (16).png",
 ];
 
 export default function AboutUs() {
   const [firstSwiper, setFirstSwiper] = useState<SwiperInstance | null>(null);
   const [thirdSwiper, setThirdSwiper] = useState<SwiperInstance | null>(null);
+
+  const controlledLogos = logos.slice(0, 8); // First 8 logos
+  const independentLogos = logos.slice(8); // Remaining 8 logos
+
   return (
     <div>
       {/* First Section: Background Image with Overlay */}
@@ -629,9 +635,9 @@ export default function AboutUs() {
           </h1>
 
           <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl px-4">
-            Our role goes beyond logistics - we serve as a strategic extension
-            of your business, guiding your products to their most effective
-            market destinations.
+            Our role goes beyond e-commerce, we serve as a strategic extension
+            of your business, guiding your products to their most
+            effective destinations.
           </p>
         </div>
       </div>
@@ -654,7 +660,7 @@ export default function AboutUs() {
             {/* Left column: heading, paragraph, button */}
             <div className="space-y-5 flex flex-col justify-between">
               <h2 className="text-2xl sm:text-3xl md:text-4xl  ">
-                How we do it.
+                How We Do It.
               </h2>
               <p className="text-base sm:text-sm md:text-lg font-avenir-family max-w-prose">
                 Channel Link is a trusted global trade solutions partner,
@@ -665,7 +671,7 @@ export default function AboutUs() {
               </p>
               <div className="mt-4">
                 <a
-                  // href="#read-more"
+                  href="/Company/about-us"
                   className=" items-center rounded-full bg-[#08647e] hover:bg-blue-700 text-white font-semibold px-6 py-3 shadow-sm transition"
                 >
                   Read more
@@ -695,13 +701,13 @@ export default function AboutUs() {
           {/* New Heading and Paragraph */}
           <div className="text-center space-y-6 mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#2c90ba]">
-              What we offer
+              What We Offer
             </h2>
-            <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl mx-auto">
+            {/* <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl mx-auto">
               Our role goes beyond logistics – we serve as a strategic extension
               of your business, guiding your products to their most effective
               market destinations.
-            </p>
+            </p> */}
           </div>
 
           {/* Business Verticals Boxes */}
@@ -763,11 +769,11 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* Fourth Section: Marketplace We Specialize In with Light Grey Background */}
+      {/* Fourth Section: Brand we work with In with Light Grey Background */}
       <section className="py-6 px-4 md:px-12 bg-[#e6e6e6]">
         <div className="text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl mt-12  text-[#0092be]">
-            Brand’s we’ve work with
+            Brand’s We Work With
           </h1>
           <p className="text-base xl:ml-160 font-avenir-family lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">
             We partner with some of the most influential brands in the world to
@@ -776,10 +782,9 @@ export default function AboutUs() {
           </p>
         </div>
 
-        {/* Carousel 1: Controller */}
+        {/* Carousel 1: Controller - Uses the first set of logos */}
         <Swiper
           modules={[Autoplay, Controller]}
-          // ✅ FIX: Wrap the setter in a function to match the expected type
           onSwiper={(swiper) => setFirstSwiper(swiper)}
           controller={{ control: thirdSwiper }}
           spaceBetween={40}
@@ -796,7 +801,7 @@ export default function AboutUs() {
           }}
           className="swiper-container mt-6"
         >
-          {logos.map((logo, index) => (
+          {controlledLogos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-32">
                 <Image
@@ -811,7 +816,7 @@ export default function AboutUs() {
           ))}
         </Swiper>
 
-        {/* Carousel 2: Moves Independently */}
+        {/* Carousel 2: Moves Independently - Uses the second set of logos */}
         <Swiper
           dir="rtl"
           modules={[Autoplay]}
@@ -829,12 +834,12 @@ export default function AboutUs() {
           }}
           className="swiper-container mt-6"
         >
-          {logos.map((logo, index) => (
+          {independentLogos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-32">
                 <Image
                   src={logo}
-                  alt={`Brand logo ${index + 1}`}
+                  alt={`Brand logo ${index + 9}`}
                   width={150}
                   height={150}
                   objectFit="contain"
@@ -844,10 +849,9 @@ export default function AboutUs() {
           ))}
         </Swiper>
 
-        {/* Carousel 3: Controlled by the first carousel */}
+        {/* Carousel 3: Controlled by the first carousel - Must use the same set as Carousel 1 */}
         <Swiper
           modules={[Controller]}
-          // ✅ FIX: Wrap the setter in a function to match the expected type
           onSwiper={(swiper) => setThirdSwiper(swiper)}
           controller={{ control: firstSwiper }}
           spaceBetween={40}
@@ -860,7 +864,7 @@ export default function AboutUs() {
           }}
           className="swiper-container mt-6 mb-14"
         >
-          {logos.map((logo, index) => (
+          {controlledLogos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-32">
                 <Image
