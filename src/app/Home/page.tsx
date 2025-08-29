@@ -614,6 +614,10 @@ export default function AboutUs() {
   const controlledLogos = logos.slice(0, 8); // First 8 logos
   const independentLogos = logos.slice(8); // Remaining 8 logos
 
+  const shuffledControlledLogos = [...controlledLogos].sort(
+    () => Math.random() - 0.5
+  );
+
   return (
     <div>
       {/* First Section: Background Image with Overlay */}
@@ -849,7 +853,7 @@ export default function AboutUs() {
           ))}
         </Swiper>
 
-        {/* Carousel 3: Controlled by the first carousel - Must use the same set as Carousel 1 */}
+        {/* Carousel 3: Controlled by the first, but with a shuffled logo order */}
         <Swiper
           modules={[Controller]}
           onSwiper={(swiper) => setThirdSwiper(swiper)}
@@ -864,7 +868,8 @@ export default function AboutUs() {
           }}
           className="swiper-container mt-6 mb-14"
         >
-          {controlledLogos.map((logo, index) => (
+          {/* ✅ CHANGE: Use the shuffled array here */}
+          {shuffledControlledLogos.map((logo, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-32">
                 <Image
