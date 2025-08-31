@@ -22,7 +22,7 @@ export default function AboutUs() {
             eCommerce retailer
           </h1>
           <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl px-4">
-            Our role goes beyond logistics - we serve as a strategic extension
+            Our role goes beyond ecommerce - we serve as a strategic extension
             of your business, guiding your products to their most effective
             market destinations.
           </p>

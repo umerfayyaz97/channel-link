@@ -20,8 +20,8 @@ export default function BrandsPage() {
             Channel Link Properties
           </h1>
           <p className="lg:text-[14px] font-avenir-family sm:text-sm md:text-xl lg:w-[350px] max-w-3xl">
-            Through our portfolio of brands, we empower people to find, buy, and
-            use products and services that improve their everyday lives.
+            {/* Through our portfolio of brands, we empower people to find, buy, and
+            use products and services that improve their everyday lives. */}
           </p>
         </div>
       </div>
@@ -31,11 +31,10 @@ export default function BrandsPage() {
         {/* Paragraph in the center */}
         <div className=" mb-12 px-4">
           <p className="text-base lg:w-[650px] font-avenir-family mx-auto text-gray-700">
-            We have a diverse portfolio of brands, and we acquire existing
-            brands that fit our mission to empower people to make better
-            decisions. Our brands focus on helping people navigate the
-            complexities of moving, choosing home services, improving financial
-            well-being, and running successful small businesses.
+            We have a diverse portfolio of brands and stores we developed that
+            fit our mission of providing great products to people. We
+            continually are looking for creative ways to bring value to our
+            brand partners and to our customers.
           </p>
         </div>
 
@@ -56,7 +55,8 @@ export default function BrandsPage() {
               />
             </div>
             <p className=" text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
+              {/* A short description of the brand and what it offers. */}
+              Visit GameInStock
             </p>
             <Link
               href="https://gameinstock.com"
@@ -89,7 +89,8 @@ export default function BrandsPage() {
               />
             </div>
             <p className=" text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
+              {/* A short description of the brand and what it offers. */}
+              Visit GeekTheory
             </p>
             <Link
               href="https://geektheory.com"
@@ -115,9 +116,7 @@ export default function BrandsPage() {
                 style={{ objectFit: "contain", height: "42px", width: "auto" }}
               />
             </div>
-            <p className="text-sm text-gray-600 flex-grow">
-              A short description of the brand and what it offers.
-            </p>
+            <p className="text-sm text-gray-600 flex-grow">Visit SliqGaming</p>
             <Link
               href="https://www.amazon.com/s?k=sliq+gaming&crid=27R1WJSRBMB1D&sprefix=sliq+gaming%2Caps%2C187&ref=nb_sb_noss_1"
               className="self-start "

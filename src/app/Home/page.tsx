@@ -777,9 +777,10 @@ export default function AboutUs() {
       <section className="py-6 px-4 md:px-12 bg-[#e6e6e6]">
         <div className="text-center space-y-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl mt-12  text-[#0092be]">
-            Brand’s We Work With
+            Brands We Work With
           </h1>
-          <p className="text-base xl:ml-160 font-avenir-family lg:w-[500px] lg:ml-80 sm:text-sm md:text-xl text-black">
+          {/* <p className="text-base xl:ml-105 font-avenir-family lg:w-[500px] lg:ml-160 sm:text-sm md:text-xl text-black"> */}
+          <p className="max-w-3xl mx-auto text-base sm:text-sm md:text-xl text-black">
             We partner with some of the most influential brands in the world to
             offer consumers affordable products and services tailored to their
             needs.
