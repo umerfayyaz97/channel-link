@@ -19,7 +19,7 @@ export default function AboutUs() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl">
             We are a Prime,
             <br className="hidden lg:block" />
-            eCommerce retailer
+            e-commerce retailer
           </h1>
           <p className="text-lg sm:text-sm md:text-xl font-avenir-family max-w-3xl px-4">
             Our role goes beyond ecommerce - we serve as a strategic extension

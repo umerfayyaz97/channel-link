@@ -27,7 +27,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Channel link",
+  title: "Channel Link",
   description: " ",
   // icons: "/favicon.ico",
 };
