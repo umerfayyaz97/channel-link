@@ -65,7 +65,7 @@ export default function BrandsPage() {
               rel="noopener noreferrer"
             >
               <button className="self-start font-avenir-family xl:mb-6 mt-4 px-6 py-2 rounded-full text-white bg-[#595959] hover:bg-gray-600 transition duration-300">
-                Visit Game in stock
+                Visit Gameinstock
               </button>
             </Link>
           </div>
