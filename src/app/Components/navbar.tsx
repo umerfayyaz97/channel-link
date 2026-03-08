@@ -125,7 +125,7 @@ const Navbar = () => {
             href="/Brands"
             className="hover:text-[#0092be] font-avenir-family  transition duration-300"
           >
-            Brands
+            Our Brands
           </Link>
           <Link
             href="/Contact-us"
@@ -209,7 +209,7 @@ const Navbar = () => {
                 href="/Brands"
                 className="block px-4 py-2 font-avenir-family hover:text-[#0092be]  transition duration-300"
               >
-                Brands
+                Our Brands
               </Link>
               <Link
                 href="/contact-us"

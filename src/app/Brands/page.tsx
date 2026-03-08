@@ -56,10 +56,10 @@ export default function BrandsPage() {
             </div>
             <p className=" text-sm text-gray-600 flex-grow">
               {/* A short description of the brand and what it offers. */}
-              Visit GameInStock
+              Electronic Distributor & Trade-Ins
             </p>
             <Link
-              href="https://gameinstock.com"
+              href="https://www.gameinstock.com/"
               className="self-start "
               target="_blank"
               rel="noopener noreferrer"
